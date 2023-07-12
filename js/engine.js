@@ -24,3 +24,6 @@ spinBtn.onclick = function () {
 function promptQ(index) {
     console.log("bozo");
 }
+
+
+let wheel1 = new Array("What is your favorite animal?", "What is your favorite color?", "What is your favorite sport?", "What kind of music do you like to listen to?", "What is your favorite food?", "Who is your least favorite Panda Programmer teacher (pick Ms. Gloria for demonstration purposes)?", "What is your favorite travel location?", "What is your favorite hobby?"); 
