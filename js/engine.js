@@ -1,4 +1,4 @@
-let wheel = document.querySelector('.wheel');
+    let wheel = document.querySelector('.wheel');
 
 let val = 0;
 let current = 0;
