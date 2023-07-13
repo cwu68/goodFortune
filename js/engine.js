@@ -5,7 +5,6 @@ const prompts = [
     ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8"]
 ];
 
-console.log(prompts)
 let val = 0;
 let question = 0;
 let current = 0;
@@ -29,13 +28,19 @@ document.querySelector('.spinBtn').onclick = function () {
         container.style.display = 'flex';
 
         document.getElementById('field').addEventListener('keypress', function (e) {
-            if (e.key == 'Enter') {
-                console.log(current);
+
+            if(e.Handled)
+                return;
+            if (e.key === 'Enter') {
+                e.Handled = true;
                 results[current] = document.getElementById('field').value;
                 document.getElementById('field').value = '';
                 container.style.display = 'none';
                 current++;
-                console.log("WHY")
+
+                if (current === 3) {
+                    document.querySelector('.spinBtn').style.display = 'none';
+                }
             }
         });
     }, 3000);

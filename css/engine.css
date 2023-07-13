@@ -96,8 +96,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    user-select: none;
-    cursor: pointer;
 }
 .container .wheel .question span {
     position: relative;
