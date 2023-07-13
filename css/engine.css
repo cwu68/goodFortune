@@ -83,7 +83,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
-    transition: transform 5s ease-in-out;
+    transition: transform 3s ease-in-out;
 }
 .container .wheel .question {
     position: absolute;
