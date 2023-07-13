@@ -7,10 +7,24 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #222;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 5;
+    background-color: #444;
+    padding: 50px;
+    width: 500px;
+    justify-content: center;
+    border: 4px ridge;
+    border-radius: 15%;
 }
 
 .container {
