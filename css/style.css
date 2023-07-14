@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #222;
+    background-color: #111;
     color: white;
 }
 
@@ -12,7 +12,8 @@ h1,h2,h3 {
     margin: 3rem;
 }
 a {
-    border: 1px solid;
+    background-color: #555;
+    border: 1px solid #222;
     padding:.5em.7em;
     border-radius: 15px;
     margin: 1rem;
