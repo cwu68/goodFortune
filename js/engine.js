@@ -75,7 +75,7 @@ document.querySelector('.spinBtn').onclick = function () {
                 document.querySelector('.spinBtn').style.display = 'none';
                 document.querySelector('.popup').style.display = 'none';
 
-                let temp = fortunes[Math.ceil(Math.random()*(fortunes.length-1))];
+                let temp = fortunes[Math.floor(Math.random()*fortunes.length)];
 
                 for (let i = 0; i < 4; i++) {
                     temp = temp.replace(order[i], results[i]);
