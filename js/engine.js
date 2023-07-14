@@ -1,7 +1,7 @@
 const wheel = document.querySelector('.wheel');
 const prompts = [
     ["What is your favorite animal?", "What is your dream vacation destination?", "Who is your favorite fictional character?", "What is your favorite type of food?", "What is your favorite color?", "What is your favorite hobby or pastime?", "What is your all-time favorite movie?", "What is your favorite season of the year?"],
-    ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8"],
+    ["What action do you enjoy doing to stay fit and active?","If you could travel anywhere in the world, what activity would you love to try?","What is something you like to do to express your creativity?","What is a skill you would love to learn or improve upon?","What activity do you find most relaxing after a long day?","What is something you would do to make the world a better place?","What is an adventurous activity you've always wanted to experience?","If you had an extra hour every day, what activity would you spend it on?"],
     ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8"]
 ];
 
