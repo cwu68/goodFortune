@@ -4,7 +4,7 @@ const prompts = [
     ["What action do you enjoy doing to stay fit and active?","If you could travel anywhere in the world, what activity would you love to try?","What is something you like to do to express your creativity?","What is a skill you would love to learn or improve upon?","What activity do you find most relaxing after a long day?","What is something you would do to make the world a better place?","What is an adventurous activity you've always wanted to experience?","If you had an extra hour every day, what activity would you spend it on?"],
     ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8"]
 ];
-
+const labels = ["Nouns", "Verbs", "Adjectives", "Numbers"];
 let val = 0;
 let question = 0;
 let current = 0;
@@ -19,6 +19,7 @@ document.querySelector('.spinBtn').onclick = function () {
     question = (question + rand) % 8;
     rand = Math.ceil(Math.random() * 8);
 
+    
     setTimeout(() => {
         if (current < 3) {
             let choice = document.querySelector('.popuptext');
@@ -46,6 +47,7 @@ document.querySelector('.spinBtn').onclick = function () {
                         }
                         
                     }
+                    document.querySelector('.label').innerText = labels[current];
                 }
             });
         } else {
@@ -63,6 +65,7 @@ document.querySelector('.spinBtn').onclick = function () {
                 document.querySelector('.popup').style.display = 'none';
             }, 2000);
         }
+        
     }, 3000);
     
 }

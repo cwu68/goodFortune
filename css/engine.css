@@ -14,7 +14,18 @@ body {
     background: #222;
 }
 
+.labelcont {
+    position: relative;
+    color: white;
+    background: #555;
+    bottom: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
 .popup {
+    position: relative;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -36,10 +47,7 @@ body {
     border-radius: 10px;
     padding: 5px;
 }
-/* 
-.popuptext {
-    transition: transform 2s ease;
-} */
+
 
 .container {
     position: relative;
