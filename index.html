@@ -15,7 +15,14 @@
         <h2>Continue?</h2>
         <h3><a id="y" onclick="start()">Yes</a>/<a id="n" onclick="roast()">No</a></h3>
     </div>
-    
+    <script>
+        document.getElementById("y").onclick = function() {window.location.href = 'engine.html'};
+        document.getElementById("n").onclick = function() {
+
+            sessionStorage.setItem('fortune', "You are lame for not getting your fortune (everyone shame shame shame)");
+            window.location.href = "fortune.html"
+        };
+
+    </script>
 </body>
-<script src="js/main.js" type="text/javascript"></script>
 </html>
