@@ -12,6 +12,7 @@ const fortunes = [
     "Ms.Gloria predicts that in your near future, Ms.Gloria will come to your house and verb you in a pool of number adjective nouns",
     "Ms.Gloria predicts that in your near future, you should prepare for a series of number adjective noun attacks that will verb you, leaving you feeling awful and hideous",
     "Ms.Gloria predicts that in your near future, your dream of noun will be shattered by number adjective tables, who will verb your every attempt to succeed.",
+    "Ms.Gloria predicts that in your near future, that you should prepare for a never-ending parade of adjective nouns that will verb you number times a day, causing you to question your sanity and feel increasingly stupid",
 ]
 const order = ['noun', 'verb', 'adjective', 'number'];
 
