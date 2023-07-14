@@ -50,8 +50,18 @@ document.querySelector('.spinBtn').onclick = function () {
             });
         } else {
             results[current] = question;
+
+
+            document.querySelector('.popup').innerHTML = "<span class='popuptext'></span>"
+            document.querySelector('.popuptext').innerText = question;
+            document.querySelector('.popup').style.display = 'flex';
+            document.querySelector('.popuptext').style.transform = 'scale(2,2)';
             document.querySelector('.spinBtn').style.display = 'none';
 
+            setTimeout(() => {
+                document.querySelector('.spinBtn').style.display = 'none';
+                document.querySelector('.popup').style.display = 'none';
+            }, 2000);
         }
     }, 3000);
     
