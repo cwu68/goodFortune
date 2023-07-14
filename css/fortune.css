@@ -18,6 +18,7 @@ body {
 
 .container {
     display: none;
+    position: absolute;
     background: whitesmoke;
     color: black;
     margin: 50px;
@@ -32,4 +33,14 @@ body {
 
 .container .fortune {
     font-size: 1.25rem;
+}
+
+
+@keyframes slideout {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
