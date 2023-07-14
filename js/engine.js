@@ -63,6 +63,8 @@ document.querySelector('.spinBtn').onclick = function () {
             setTimeout(() => {
                 document.querySelector('.spinBtn').style.display = 'none';
                 document.querySelector('.popup').style.display = 'none';
+
+                window.location.href = "fortune.html";
             }, 2000);
         }
         

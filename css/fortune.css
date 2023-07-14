@@ -19,16 +19,16 @@ body {
 .container {
     display: none;
     position: absolute;
+    /* transform: translateX(50vw); */
     background: whitesmoke;
     color: black;
     margin: 50px;
     padding: 30px;
-    width: 80%;
-    /* border: 10px #222 ridge; */
+    width: 50%;
+    text-align: center;
     border-bottom: 4px yellow outset;
     border-radius: 5px;
     box-shadow: 8px 8px 5px lightblue;
-
 }
 
 .container .fortune {
@@ -38,9 +38,19 @@ body {
 
 @keyframes slideout {
     from {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(100%);
+        transform: translateX(40vw);
     }
 }
+
+/* @keyframes slidein {
+    from {
+        transform: translateX(50vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+} */
