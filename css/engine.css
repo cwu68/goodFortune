@@ -22,15 +22,16 @@ body {
     position: absolute;
     color: white;
     z-index: 5;
-    background-color: #444;
+    font-size: 1.25rem;
+    background-color: #555;
     padding: 50px;
     width: 500px;
-    border: 4px ridge;
-    border-radius: 15%;
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .popup input {
-    margin-top: 10px;
+    margin-top: 20px;
     height: 25px;
     border-radius: 10px;
     padding: 5px;
