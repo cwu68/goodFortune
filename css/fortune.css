@@ -7,20 +7,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #fff;
 }
+
+.cookie {
+    height: 300px;
+    cursor: pointer;
+}
+
 .container {
-    
-    background: #333;
-    color: white;
+    display: none;
+    background: whitesmoke;
+    color: black;
     margin: 50px;
-    padding: 50px;
+    padding: 30px;
     width: 80%;
-    border: 10px #222 ridge;
-    border-radius: 25px;
+    /* border: 10px #222 ridge; */
+    border-bottom: 4px yellow outset;
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px lightblue;
 
 }
 
 .container .fortune {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
