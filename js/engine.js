@@ -1,6 +1,6 @@
 const wheel = document.querySelector('.wheel');
 const prompts = [
-    ["What is your favorite animal?", "What is your favorite color?", "What is your favorite sport?", "What kind of music do you like to listen to?", "What is your favorite food?", "Who is your least favorite Panda Programmer teacher (pick Ms. Gloria for demonstration purposes)?", "What is your favorite travel location?", "What is your favorite hobby?"],
+    ["What is your favorite animal?", "What is your dream vacation destination?", "Who is your favorite fictional character?", "What is your favorite type of food?", "What is your favorite color?", "What is your favorite hobby or pastime?", "What is your all-time favorite movie?", "What is your favorite season of the year?"],
     ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8"],
     ["Question 1", "Question 2", "Question 3", "Question 4", "Question 5", "Question 6", "Question 7", "Question 8"]
 ];
