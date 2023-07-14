@@ -20,28 +20,39 @@ document.querySelector('.spinBtn').onclick = function () {
     rand = Math.ceil(Math.random() * 8);
 
     setTimeout(() => {
+        if (current < 3) {
+            let choice = document.querySelector('.popuptext');
+            choice.innerText = prompts[current][question];
 
-        let choice = document.querySelector('.popuptext'); 
-        choice.innerText = prompts[current][question];
+            let container = document.querySelector('.popup');
+            container.style.display = 'flex';
 
-        let container = document.querySelector('.popup');
-        container.style.display = 'flex';
+            document.getElementById('field').addEventListener('keypress', function (e) {
 
-        document.getElementById('field').addEventListener('keypress', function (e) {
+                if (e.Handled)
+                    return;
+                if (e.key === 'Enter') {
+                    e.Handled = true;
+                    results[current] = document.getElementById('field').value;
+                    document.getElementById('field').value = '';
+                    container.style.display = 'none';
+                    current++;
 
-            if(e.Handled)
-                return;
-            if (e.key === 'Enter') {
-                e.Handled = true;
-                results[current] = document.getElementById('field').value;
-                document.getElementById('field').value = '';
-                container.style.display = 'none';
-                current++;
-
-                if (current === 3) {
-                    document.querySelector('.spinBtn').style.display = 'none';
+                    if (current === 3) {
+                        for (let i = 1; i < 9; i++) {
+                            let temp = document.getElementById("q" + i);
+                            temp.innerText = i;
+                            temp.style.transform = "rotate(-45deg)";
+                        }
+                        
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            results[current] = question;
+            document.querySelector('.spinBtn').style.display = 'none';
+
+        }
     }, 3000);
+    
 }
